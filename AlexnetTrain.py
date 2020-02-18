@@ -30,16 +30,9 @@ for epoch in range(max_epoch):
 		#print("Label:{}\n".format(label))
 		#exit()
 		optimiser.zero_grad()
-		#label_t = torch.Tensor(4)
-		#label_t=torch.Tensor(data=label)
-		#label_t = label_t1.view(4,)
+		 
 		output = model(image)
-		#output = output.view(4,1)
-		#output = nn.functional.log_softmax(output,dim=1)
-		#print("Input shape is {}".format(image.size()))
-		#print("Input is {}".format(image))
-		#print("Output shape is {}".format(output.size()))
-		#print("label shape is {}".format(label.size()))
+		 
 		print("Label:{}\n".format(label))
 		print("Output is {}\n".format(output))
 		#exit()
